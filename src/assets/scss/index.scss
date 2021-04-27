@@ -1,0 +1,128 @@
+* {padding:0; margin:0;border:0;}
+ol,ul {list-style:none;}
+@font-face {
+  font-family: 'SourceHanSansCN-Bold';
+  src: url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650432251SourceHanSansCN-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceHanSansCN-ExtraLight';
+  src: url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650467609SourceHanSansCN-ExtraLight.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceHanSansCN-Heavy';
+  src: url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650494625SourceHanSansCN-Heavy.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceHanSansCN-Light';
+  src: url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650528199SourceHanSansCN-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceHanSansCN-Medium';
+  src: url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650557319SourceHanSansCN-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceHanSansCN-Normal';
+  src: url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650574633SourceHanSansCN-Normal.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceHanSansCN-Regular';
+  src: url('https://laschain.oss-cn-shenzhen.aliyuncs.com/lac-dev/20190905/common/1567650591217SourceHanSansCN-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: SourceHanSansCN-Regular,'Microsoft Yahei',Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// 页面公共头部
+.header{
+  height: 80px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 80px;
+  z-index: 100;
+  position: relative;
+  color: #111;
+  .nav-box{
+    width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dcdfe6;
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      width: 200px;
+      padding-left: 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .nav-list{
+      display: flex;
+      padding-right: 20px;
+      .nav-item{
+        a{
+          display: inline-block;
+          padding: 0 30px;
+          width: 70px;
+          text-decoration: none;
+          color: #666;
+          &:hover{
+            color: #00C297;
+          }
+          &.router-link-exact-active{
+            color: #00C297;
+            position: relative;
+            &:after {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              bottom: 0;
+              left: 35px;
+              width: 60px;
+              height: 2px;
+              background: #00C297;
+            }
+          }
+        }
+        span{
+          margin: 0 40px;
+        }
+      }
+    }
+  }
+}
+// 首页设计规范
+.min-con{
+  padding: 55px 30px 95px;
+  box-sizing: border-box;
+  width: 1140px;
+  margin: 0 auto;
+}
+.ui-specs{
+  .ui-specs-img{
+    width: 1080px;
+    height: auto;
+  }
+}
